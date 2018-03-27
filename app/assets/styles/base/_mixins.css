@@ -15,3 +15,12 @@
         @mixin-content;
     }
 }
+
+@define-mixin clearfix {
+    /* To trick float so that browser know there is content in this div */
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
