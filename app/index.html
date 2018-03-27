@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -6,11 +6,13 @@
   <title>YudhaYuki | Portfolio</title>
   <meta name="keywords" content="Frontend Developer, Frontend Developer Brussels, Frontend Developer Amsterdam, Frontend Developer Rotterdam">
   <meta name="description" content="Pleased you with our UI works">
+
+  <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
   <header>
     <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#">Get in Touch</a>
+    <a class="btn" href="#">Get in touch</a>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -21,14 +23,16 @@
   </header>
 
   <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
-    <h1>Hi, I'm Yudha</h1>
-    <h2>I'm a junior front-end web developer</h2>
-    <p>Creating responsive UI design is my playground</p>
-    <p><a href="#">Get in touch</a></p>
+    <img class="large-hero__overlay" src="assets/images/hero--YuYu.jpg">
+    <div class="large-hero__text-content">
+      <h1 class="large-hero__title text-animation__title">Hi, I am Yudha</h1>
+      <h2 class="large-hero__subtitle text-animation__subtitle">I am a junior front-end web developer</h2>
+      <p class="large-hero__description">Creating responsive UI design is my playground</p>
+      <p><a href="#" class="btn btn--large btn--orange btn--large btn-animation btn-animation--large-btn">Get in touch</a></p>
+    </div>
   </div>
 
-  <div id="our-beginning">
+  <div id="about">
     <h2>The first trip we planned was our own.</h2>
     <h3>Ever since, we&rsquo;ve been working to make travel better for everyone.</h3>
     <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
@@ -39,7 +43,7 @@
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
   </div>
 
-  <div id="features">
+  <div id="projects">
     <img src="assets/images/icons/star.svg">
     <h2>Our Features</h2>
   
@@ -60,7 +64,7 @@
     <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
   </div>
 
-  <div id="testimonials">
+  <div id="contact">
     <img src="assets/images/icons/comment.svg">
     <h2>Real Testimonials</h2>
 
@@ -81,7 +85,7 @@
   </div>
 
   <footer>
-    <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
+    <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a class="btn btn--orange" href="#">Get in Touch</a></p>
   </footer>
 </body>
 </html>
