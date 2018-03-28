@@ -460,25 +460,19 @@ a {
     }
 
 .large-hero {
-    border-bottom: 5px solid #2f5572;
-    /* background: rgba(0, 0, 0, .65); */
-    position: relative;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    background: url('/assets/images/hero--YuYu.jpg');
+    background-size: 100% 100%;
     
 }
 
-@media (min-width: 530px) {
-
-.large-hero {
-        border-bottom: 10px solid #2f5572
-    
-}
-    }
-
-.large-hero__image {
-        display: block;
-        /* height: auto;
-        width: 100vw;
-        z-index: -3; */
+.large-hero--overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .25);
+        position: relative;
     }
 
 .large-hero__text-content {
@@ -493,7 +487,7 @@ a {
 
 .large-hero__title {
         font-weight: 300;
-        color: #fff200;
+        color: orange;
         font-size: 2rem;
         margin: 0;
     }

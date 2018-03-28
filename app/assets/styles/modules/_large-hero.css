@@ -1,17 +1,15 @@
 .large-hero {
-    border-bottom: 5px solid $mainBlue;
-    /* background: rgba(0, 0, 0, .65); */
-    position: relative;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    background: url('/assets/images/hero--YuYu.jpg');
+    background-size: 100% 100%;
 
-    @mixin atSmall {
-        border-bottom: 10px solid $mainBlue;
-    }
-
-    &__image {
-        display: block;
-        /* height: auto;
-        width: 100vw;
-        z-index: -3; */
+    &--overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .25);
+        position: relative;
     }
 
     &__text-content {
@@ -25,7 +23,7 @@
 
     &__title {
         font-weight: 300;
-        color: #fff200;
+        color: $mainOrange;
         font-size: 2rem;
         margin: 0;
 
