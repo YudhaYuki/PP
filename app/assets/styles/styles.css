@@ -14,6 +14,8 @@
 @import "modules/_row";
 @import "modules/_sprite";
 @import "modules/_site-footer";
+@import "modules/_site-header";
+@import "modules/_primary-nav";
 
 @import "modules/_text-animation";
 @import "modules/_btn-animation";
