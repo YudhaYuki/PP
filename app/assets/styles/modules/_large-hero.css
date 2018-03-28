@@ -1,5 +1,6 @@
 .large-hero {
     border-bottom: 5px solid $mainBlue;
+    /* background: rgba(0, 0, 0, .65); */
     position: relative;
 
     @mixin atSmall {
@@ -8,6 +9,9 @@
 
     &__image {
         display: block;
+        /* height: auto;
+        width: 100vw;
+        z-index: -3; */
     }
 
     &__text-content {
@@ -21,7 +25,7 @@
 
     &__title {
         font-weight: 300;
-        color: $mainBlue;
+        color: #fff200;
         font-size: 2rem;
         margin: 0;
 

@@ -355,6 +355,11 @@ img {
     height: auto;
 }
 
+a {
+    color: orange;
+    text-decoration: none;
+}
+
 .btn {
     background-color: #2f5572;
     color: #fff;
@@ -403,7 +408,7 @@ img {
     overflow: hidden;
     padding-left: 18px;
     padding-right: 18px;
-    max-width: 1200px;
+    max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -417,8 +422,20 @@ img {
         padding-right: 0;
     }
 
+.wrapper--b-margin {
+        margin-bottom: 1rem;
+    }
+
+@media (min-width: 530px) {
+
+.wrapper--b-margin {
+            margin-bottom: 3.875rem
+    }
+    }
+
 .large-hero {
     border-bottom: 5px solid #2f5572;
+    /* background: rgba(0, 0, 0, .65); */
     position: relative;
     
 }
@@ -433,6 +450,9 @@ img {
 
 .large-hero__image {
         display: block;
+        /* height: auto;
+        width: 100vw;
+        z-index: -3; */
     }
 
 .large-hero__text-content {
@@ -447,7 +467,7 @@ img {
 
 .large-hero__title {
         font-weight: 300;
-        color: #2f5572;
+        color: #fff200;
         font-size: 2rem;
         margin: 0;
     }
@@ -572,6 +592,10 @@ img {
         margin-bottom: 1.6em;
     }
 
+.headline--no-t-margin {
+        margin-top: 0;
+    }
+
 /* To trick float so that browser know there is content in this div */
 
 .row::after {
@@ -588,17 +612,51 @@ img {
         padding-right: 65px;
     }
 
+.row__b-margin-until-medium {
+        margin-bottom: 1rem;
+    }
+
 @media (min-width: 800px) {
-        .row__medium-4{
+
+
+        .row__b-margin-until-medium {
+            margin-bottom: 0;
+        }
+
+        .row__medium-4 {
             float: left;
             width: 33.33%;
         }
+
+            .row__medium-4--larger {
+                width: 37%;
+            }
     
-        .row__medium-8{
+        .row__medium-8 {
             float: left;
             width: 66.66%;
         }
+
+            .row__medium-8--smaller {
+                width: 63%;
+            }
     }
+
+.generic-content-container p {
+        line-height: 1.65;
+        margin: 1.8rem 0;
+    }
+
+@media (min-width: 530px) {
+
+.generic-content-container p {
+            font-size: 1.125rem
+    }
+    }
+
+.generic-content-container p a {
+            font-weight: 700;
+        }
 
 .text-animation__title {
     -webkit-animation: moveInLeft 1s ease-out;
