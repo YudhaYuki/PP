@@ -361,7 +361,7 @@ a {
 }
 
 .btn {
-    background-color: #2f5572;
+    background-color: #FF6D24;
     color: #fff;
     text-decoration: none;
     padding:.75rem 1.2rem;
@@ -523,7 +523,7 @@ a {
 
 .large-hero__subtitle{
         font-weight: 300;
-        color: #fff;
+        color: #E2DED3;
         font-size: 1.5rem;
         margin: 0;
     }
@@ -536,7 +536,7 @@ a {
     }
 
 .large-hero__description {
-        color: #fff;
+        color: #E2DED3;
         font-size: 1.1rem;
         font-weight: 100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
@@ -586,7 +586,7 @@ a {
     }
 
 .page-section--blue {
-        background-color: #2f5572;
+        background-color: #FF6D24;
         color: #fff;
     }
 
@@ -607,7 +607,7 @@ a {
 .headline {
     font-size: 1.9rem;
     font-weight: 300;
-    color: #2f5572;
+    color: #FF6D24;
     
 }
 
@@ -695,7 +695,7 @@ a {
     }
 
 .section-title--blue {
-        color: #2f5572;
+        color: #FF6D24;
     }
 
 .section-title__icon {
@@ -794,7 +794,7 @@ a {
     }
 
 .testimonial__title {
-        color: #2f5572;
+        color: #FF6D24;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 500;
@@ -1015,7 +1015,7 @@ Instead edit gulp/templates/sprite */
     }
 
 .site-footer {
-    background-color: #2f5572;
+    background-color: #FF6D24;
     color: white;
     padding: .5rem 0;
     text-align: center;
@@ -1041,21 +1041,29 @@ Instead edit gulp/templates/sprite */
     position: absolute;
     width: 100%;
     z-index: 2;
+    transition: background-color .3s ease-out;
 
 
 }
 
+.site-header--is-expanded {
+        background-color: rgba(255,109,36, .55);
+    }
+
 @media (min-width: 800px) {
 
 .site-header {
-        background-color: rgba(255,109,36, .30)
+        background-color: rgba(133,118,113, .30)
 
 
 }
     }
 
+@media (min-width: 800px) {
+
 .site-header__btn-container {
-        float: right;
+            float: right
+    }
     }
 
 .site-header__logo {
@@ -1066,7 +1074,7 @@ Instead edit gulp/templates/sprite */
                 transform: translateX(-50%) scale(.8);
         -webkit-transform-origin: 50% 0;
                 transform-origin: 50% 0;
-        background-color: #FF6D24;
+        background-color: #857671;
         padding: 25px 36px;
     }
 
@@ -1086,8 +1094,9 @@ Instead edit gulp/templates/sprite */
 .site-header__menu-icon {
         width: 20px;
         height: 20px;
-        background-color: #fff;
+        background-color: #E2DED3;
         position: absolute;
+        z-index: 10;
         top: 10px;
         right: 10px;
     }
@@ -1100,18 +1109,50 @@ Instead edit gulp/templates/sprite */
     }
 
 .site-header__menu-content {
-        display: none;
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        transition: all .3s ease-out;
+        position: relative;
+        z-index: -10;
+        padding-top: 90px;
+        text-align: center;
     }
 
 @media (min-width: 800px) {
 
 .site-header__menu-content {
-            display: block
+            opacity: 1;
+            z-index: 1;
+            padding-top: 0;
+            -webkit-transform: scale(1);
+                    transform: scale(1)
     }
     }
 
+.site-header__menu-content--is-visible {
+            opacity: 1;
+            z-index: 1;
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+        }
+
+.primary-nav {
+    padding-top: 10px;
+}
+
+@media (min-width: 800px) {
+
+.primary-nav {
+        padding-top: 0
+}
+    }
+
+@media (min-width: 800px) {
+
 .primary-nav--pull-right {
-        float: right;
+            float: right
+    }
     }
 
 .primary-nav ul {
@@ -1129,16 +1170,47 @@ Instead edit gulp/templates/sprite */
 
 .primary-nav li {
         list-style: none;
-        float: left;
-        padding-right: 20px;
+        display: inline-block;
+        padding-right: 7px;
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav li {
+            padding-right: 20px;            
+            float: left;   
+            display: block
+    }
+    }
+
+.primary-nav li:last-child {
+        padding-right: 0;
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav li:last-child {
+            padding-right: 20px
+    }
     }
 
 .primary-nav a {
-        color: #fff;
+        color: #E2DED3;
         text-decoration: none;
         font-weight: 300;
         display: block;
-        padding: 12px 0;
+        padding: 5px 8px;
+        font-size: .8rem;
+        background-color: rgba(255,109,36, .5);
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav a {
+            font-size: 1rem;
+            padding: 12px 0;   
+            background-color: transparent
+    }
     }
 
 .text-animation__title {
@@ -1160,7 +1232,7 @@ Instead edit gulp/templates/sprite */
             animation: typeWriter 5s steps(28) 1.5s;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid #2f5572;
+    border-right: 2px solid #FF6D24;
     width: 28ch;
     font-weight: 400;
 }
