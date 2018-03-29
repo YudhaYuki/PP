@@ -9,7 +9,6 @@ class StickyHeader {
         this.pageSections = $(".page-section");
         this.headerLinks = $(".primary-nav a");
         this.createPageSectionWaypoints();
-
     }
 
     createHeaderWaypoint() {
@@ -32,13 +31,28 @@ class StickyHeader {
             var currentPageSection = this;
             new Waypoint({
                 element: currentPageSection,
-                handler: function() {
-                    var matchingHandlerLink = currentPageSection.getAttribute("data-matching-link");
-                    that.headerLinks.removeClass("is-current-link");
-                    $(matchingHandlerLink).addClass("is-current-link");
-                }
+                handler: function(direction) {
+                    if (direction === "down") {
+                        var matchingHandlerLink = currentPageSection.getAttribute("data-matching-link");
+                        that.headerLinks.removeClass("is-current-link");
+                        $(matchingHandlerLink).addClass("is-current-link");
+                    }
+                },
+                offset: "18%"
+            });
+
+            new Waypoint({
+                element: currentPageSection,
+                handler: function(direction) {
+                    if (direction === "up") {
+                        var matchingHandlerLink = currentPageSection.getAttribute("data-matching-link");
+                        that.headerLinks.removeClass("is-current-link");
+                        $(matchingHandlerLink).addClass("is-current-link");
+                    }
+                },
+                offset: "-40%"
             })
-        })
+        });
     }
 }
 
