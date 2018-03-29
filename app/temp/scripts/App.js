@@ -11394,7 +11394,7 @@ var StickyHeader = function () {
     }, {
         key: 'createPageSectionWaypoints',
         value: function createPageSectionWaypoints() {
-            that = this;
+            var that = this;
             this.pageSections.each(function () {
                 var currentPageSection = this;
                 new Waypoint({

@@ -27,7 +27,7 @@ class StickyHeader {
     }
 
     createPageSectionWaypoints() {
-        that = this;
+        var that = this;
         this.pageSections.each(function() {
             var currentPageSection = this;
             new Waypoint({
