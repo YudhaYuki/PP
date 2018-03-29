@@ -11371,6 +11371,9 @@ var StickyHeader = function () {
         this.siteHeader = (0, _jquery2.default)(".site-header");
         this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
         this.createHeaderWaypoint();
+        this.pageSections = (0, _jquery2.default)(".page-section");
+        this.headerLinks = (0, _jquery2.default)(".primary-nav a");
+        this.createPageSectionWaypoints();
     }
 
     _createClass(StickyHeader, [{
@@ -11386,6 +11389,22 @@ var StickyHeader = function () {
                         that.siteHeader.removeClass("site-header--dark");
                     }
                 }
+            });
+        }
+    }, {
+        key: 'createPageSectionWaypoints',
+        value: function createPageSectionWaypoints() {
+            that = this;
+            this.pageSections.each(function () {
+                var currentPageSection = this;
+                new Waypoint({
+                    element: currentPageSection,
+                    handler: function handler() {
+                        var matchingHandlerLink = currentPageSection.getAttribute("data-matching-link");
+                        that.headerLinks.removeClass("is-current-link");
+                        (0, _jquery2.default)(matchingHandlerLink).addClass("is-current-link");
+                    }
+                });
             });
         }
     }]);

@@ -1060,7 +1060,7 @@ Instead edit gulp/templates/sprite */
 }     
         
         .site-header--dark {
-            background-color: rgba(23, 51, 72, .85);
+            background-color: rgba(78,65,59, .85);
         }
     }
 
@@ -1281,6 +1281,10 @@ Instead edit gulp/templates/sprite */
             padding: 12px 0;   
             background-color: transparent
     }
+            
+            .primary-nav a.is-current-link {
+                color: #FF6D24;
+            }
     }
 
 .reveal-item {
