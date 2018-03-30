@@ -461,7 +461,7 @@ a {
 
 .large-hero {
     background-size: cover;
-    height: 700px;
+    height: 90vh;
     width: 100%;
     background: url('/assets/images/hero--YuYu.jpg');
     background-size: cover;
@@ -855,6 +855,11 @@ a {
             margin-bottom: 0;
         }
 
+        .row__medium-3 {
+            float: left;
+            width: 25%;
+        }
+
         .row__medium-4 {
             float: left;
             width: 33.33%;
@@ -883,6 +888,11 @@ a {
         
         .row__b-margin-until-large {
             margin-bottom: 0;
+        }
+
+        .row__large-3 {
+            float: left;
+            width: 25%;
         }
 
         .row__large-4 {
@@ -1298,6 +1308,74 @@ Instead edit gulp/templates/sprite */
         opacity: 1;
         -webkit-transform: scale(1);
                 transform: scale(1);
+    }
+
+.projects-item {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+.projects-item img {
+            height: 100%;
+            width: 100%;
+            transition: all .3s ease-out;
+        }
+
+.projects-item:hover img {
+            -webkit-transform: scale(1.2, 1.2) rotate(10deg);
+                    transform: scale(1.2, 1.2) rotate(10deg);
+        }
+
+.projects-item:hover .projects-inner {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+        }
+
+.projects-item:before {
+            position: absolute;
+            content: '';
+            background-color: #34495e;
+            transition: all .5s ease-in;
+            top: -40;
+            right: -110%;
+            width: 170%;
+            height: 30%;
+            z-index: 3;
+            -webkit-transform: rotate(50deg);
+                    transform: rotate(50deg);
+        }
+
+.projects-item:hover:before {
+            top: 120%;
+            right: 120%
+        }
+
+.projects-inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+        color: #fff;
+        text-align: center;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        transition: all .5s ease;
+    }
+
+.projects-title {
+        margin-top: 20%;
+        margin-bottom: 20px;
+        color: #FF6D24;
+    }
+
+.projects-description {
+        padding: 0 20px;
     }
 
 .text-animation__title {
