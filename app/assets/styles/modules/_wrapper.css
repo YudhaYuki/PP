@@ -6,6 +6,14 @@
     margin-left: auto;
     margin-right: auto;
 
+    &--medium {
+        max-width: 976px;
+    }
+
+    &--narrow {
+        max-width: 470px;
+    }
+
     &--no-padding-until-medium {
         padding-left: 0;
         padding-right: 0;
@@ -24,11 +32,7 @@
             padding-left: 18px;
             padding-right: 18px;
         }
-    }
-
-    &--medium {
-        max-width: 976px;
-    }
+    } 
 
     .wrapper {
         padding-left: 0;
