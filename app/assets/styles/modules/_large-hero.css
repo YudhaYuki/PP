@@ -1,6 +1,6 @@
 .large-hero {
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: url('/assets/images/hero--YuYu.jpg');
     background-size: cover;
@@ -13,7 +13,7 @@
     }
 
     &__text-content {
-        padding-top: 88px;
+        padding-top: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -29,7 +29,7 @@
     &__title {
         font-weight: 300;
         color: $mainOrange;
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin: 0;
 
         @mixin atSmall {
@@ -48,18 +48,24 @@
     &__subtitle{
         font-weight: 300;
         color: $mainWhite;
-        font-size: 1.5rem;
-        margin: 0;
+        font-size: 1.7rem;
+        margin-top: 1;
 
         @mixin atSmall {
-            font-size: 2.9rem;
+            font-size: 2.1rem;
+            margin-top: 1rem;
+            
+        }
+
+        @mixin atMedium {
+            font-size: 2.7rem;
         }
     }
 
     &__description {
         color: $mainWhite;
         font-size: 1.1rem;
-        font-weight: 100;
+        font-weight: 300;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         max-width: 30rem;
         margin-left: auto;

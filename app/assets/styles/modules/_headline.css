@@ -34,7 +34,13 @@
     }
 
     &--b-margin-small {
-        margin-bottom: .5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+
+        @mixin atSmall {
+            margin-top: .5em;            
+            margin-bottom: 1em;            
+        }
     }
 
     &--b-margin-large {

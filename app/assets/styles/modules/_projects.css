@@ -1,16 +1,14 @@
 .projects {
 
-    
     &-item {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         border: 1px solid #ddd;
         position: relative;
         overflow: hidden;
-        cursor: pointer;        
 
         & img {
-            height: 100%;
+            height: auto;
             width: 100%;
             transition: all .3s ease-out;
         }
@@ -26,12 +24,12 @@
         &:before {
             position: absolute;
             content: '';
-            background-color: #34495e;
+            background-color: rgba($mainBlack, .85);
             transition: all .5s ease-in;
-            top: -40;
-            right: -110%;
-            width: 170%;
-            height: 30%;
+            top: -60%;
+            right: -210%;
+            width: 450%;
+            height: 50%;
             z-index: 3;
             transform: rotate(50deg);
         }
@@ -48,7 +46,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba($mainBlack, .85);
         color: #fff;
         text-align: center;
         transform: scale(0);

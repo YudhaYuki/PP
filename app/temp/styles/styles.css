@@ -361,7 +361,6 @@ a {
 }
 
 .btn {
-    background-color: #FF6D24;
     color: #fff;
     text-decoration: none;
     padding:.75rem 1.2rem;
@@ -379,9 +378,7 @@ a {
 
     }
 
-/* border-radius: 100px; */
-
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .btn--large {
             font-size: 1.25rem
@@ -426,7 +423,7 @@ a {
         padding-right: 0;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .wrapper--no-padding-until-medium {
             padding-left: 18px;
@@ -439,7 +436,7 @@ a {
         padding-right: 0;
     }
 
-@media (min-width: 1010px) {
+@media (min-width: 75rem) {
 
 .wrapper--no-padding-until-large {
             padding-left: 18px;
@@ -456,7 +453,7 @@ a {
         margin-bottom: 1rem;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .wrapper--b-margin {
             margin-bottom: 3.875rem
@@ -465,7 +462,7 @@ a {
 
 .large-hero {
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: url('/assets/images/hero--YuYu.jpg');
     background-size: cover;
@@ -480,7 +477,7 @@ a {
     }
 
 .large-hero__text-content {
-        padding-top: 88px;
+        padding-top: 50px;
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -490,7 +487,7 @@ a {
         text-align: center;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .large-hero__text-content {
             padding-top: 60px
@@ -500,25 +497,25 @@ a {
 .large-hero__title {
         font-weight: 300;
         color: #FF6D24;
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin: 0;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .large-hero__title {
             font-size: 2.8rem
     }
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .large-hero__title {
             font-size: 3.8rem
     }
     }
 
-@media (min-width: 1010px) {
+@media (min-width: 75rem) {
 
 .large-hero__title {
             font-size: 4.8rem
@@ -528,28 +525,36 @@ a {
 .large-hero__subtitle{
         font-weight: 300;
         color: #E2DED3;
-        font-size: 1.5rem;
-        margin: 0;
+        font-size: 1.7rem;
+        margin-top: 1;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .large-hero__subtitle{
-            font-size: 2.9rem
+            font-size: 2.1rem;
+            margin-top: 1rem
+    }
+    }
+
+@media (min-width: 56.25rem) {
+
+.large-hero__subtitle{
+            font-size: 2.7rem
     }
     }
 
 .large-hero__description {
         color: #E2DED3;
         font-size: 1.1rem;
-        font-weight: 100;
+        font-weight: 300;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         max-width: 30rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .large-hero__description {
             font-size: 1.875rem
@@ -560,7 +565,7 @@ a {
     padding: 1.2rem 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .page-section {
         padding: 4.5rem 0
@@ -571,7 +576,7 @@ a {
         padding-bottom: 0;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .page-section--no-b-padding-until-medium {
             padding-bottom: 4.5rem
@@ -582,7 +587,7 @@ a {
         padding-bottom: 0;
     }
 
-@media (min-width: 1010px) {
+@media (min-width: 75rem) {
 
 .page-section--no-b-padding-until-large {
             padding-bottom: 4.5rem
@@ -591,6 +596,8 @@ a {
 
 .page-section--blue {
         background-color: #FF6D24;
+
+        background: linear-gradient(to left, #fd6d33, #f16529);
         color: #fff;
     }
 
@@ -599,7 +606,7 @@ a {
 
     }
 
-@media (min-width: 1010px) {
+@media (min-width: 75rem) {
 
             .page-section--testimonials.lazyloaded {
                 background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
@@ -614,7 +621,7 @@ a {
     
 }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .headline {
         font-size: 2.875rem
@@ -634,7 +641,7 @@ a {
         font-size: 1.2rem;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .headline--small {
             font-size: 1.875rem
@@ -652,7 +659,16 @@ a {
     }
 
 .headline--b-margin-small {
-        margin-bottom: .5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+@media (min-width: 26.25rem) {
+
+.headline--b-margin-small {
+            margin-top: .5em;            
+            margin-bottom: 1em
+    }
     }
 
 .headline--b-margin-large {
@@ -669,7 +685,7 @@ a {
         margin:0 0 1.8rem 0;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .generic-content-container p {
             font-size: 1.125rem
@@ -682,19 +698,15 @@ a {
 
 .section-title {
     font-size: 2.55rem;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .section-title {
-        font-size: 3.75rem
+        font-size: 2.875rem
 }
-    }
-
-.section-title strong {
-        font-weight: 500;
     }
 
 .section-title--blue {
@@ -713,7 +725,7 @@ a {
         margin-bottom: .6rem;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .section-title__icon {
             position: relative;
@@ -730,7 +742,7 @@ a {
     padding-bottom: 2.5rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .feature-item {
         padding-left: 94px
@@ -743,7 +755,7 @@ a {
         margin: 0 auto;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .feature-item__icon {
             position: absolute;
@@ -761,7 +773,7 @@ a {
 
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .feature-item__title {
             text-align: left;
@@ -778,7 +790,7 @@ a {
     margin-bottom: 98px;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 75rem) {
 
 .testimonial {
         padding: 0 1.8125rem 1px 1.8125rem;        
@@ -827,141 +839,166 @@ a {
 
 .row--t-padding {
         padding-top: 80px;
-    }
+      }
 
 .row--gutters {
         margin-right: -65px;
-    }
+      }
 
 .row--gutters-large {
         margin-right: -100px;
-    }
+      }
 
-/* &--gutters-small {
+.row--gutters-small {
         margin-right: -45px;
-    } */
+      }
 
-.row--gutters > div {
+/* &--gutters-about > div :not(:last-child){
         padding-right: 65px;
-    }
+      } */
 
 .row--gutters-large > div {
         padding-right: 100px;
-    }
+      }
 
-/* &--gutters-small > div {
-        margin-right: 45px;
-    } */
+/* &--gutters > div {
+        padding-right: 65px;
+      } */
+
+.row--gutters-small > div {
+        padding-right: 45px;
+      }
 
 .row__b-margin-until-medium {
         margin-bottom: 1rem;
-    }
+      }
 
-@media (min-width: 800px) {
-
-        .row__b-margin-until-medium {
-            margin-bottom: 0;
-        }
+@media (min-width: 26.25rem) {
 
         .row__medium-3 {
             float: left;
-            width: 25%;
+            width: 5%;
+        }
+    }
+
+@media (min-width: 37.5rem) {
+        .row__medium-3 {
+          float: left;
+          width: 50%;
+        }
+    }
+
+@media (min-width: 56.25rem) {
+
+.row {
+    
+        /* &__medium-8 {
+          float: left;
+          width: 66.66%;
+        }
+    
+        &__medium-8--smaller {
+          width: 63%;
+        } */
+    
+    }
+    
+        .row__b-margin-until-medium {
+          margin-bottom: 0;
+        }
+    
+        .row__medium-3 {
+          float: left;
+          width: 33.33%;
         }
 
         .row__medium-4 {
-            float: left;
-            width: 33.33%;
+          float: left;
+          width: 33.33%;
         }
-
+    
         .row__medium-4--larger {
-            width: 37%;
+          width: 37%;
         }
-
+    
         .row__medium-6 {
-            float: left;
-            width: 50%;
-        }
-    
-        .row__medium-8 {
-            float: left;
-            width: 66.66%;
-        }
-
-        .row__medium-8--smaller {
-            width: 63%;
+          float: left;
+          width: 50%;
         }
     }
 
-@media (min-width: 1010px) {
+@media (min-width: 75rem) {
         
-        .row__b-margin-until-large {
-            margin-bottom: 0;
-        }
+            .row__b-margin-until-large {
+              margin-bottom: 0;
+            }
 
-        .row__large-3 {
-            float: left;
-            width: 25%;
-        }
+            .row__medium-3 {
+              float: left;
+              width: 25%;
+            }
+        
+            .row__large-4 {
+              float: left;
+              width: 33.33%;
+            }
+        
+            .row__large-4--larger {
+              width: 37%;
+            }
+        
+            .row__large-6 {
+              float: left;
+              width: 50%;
+            }
+        
+            .row__large-8 {
+              float: left;
+              width: 66.66%;
+            }
+        
+            .row__large-8--smaller {
+              width: 63%;
+            }
+    }
 
-        .row__large-4 {
-            float: left;
-            width: 33.33%;
-        }
+/* Begin Equal Height Rules */
 
-        .row__large-4--larger {
-            width: 37%;
-        }
+@media (min-width: 56.25rem) {
 
-        .row__large-6 {
-            float: left;
-            width: 50%;
-        }
+.flexbox .row--equal-height-at-medium {
+          display: flex
     
-        .row__large-8 {
-            float: left;
-            width: 66.66%;
+      }
+    }
+
+.flexbox .row--equal-height-at-medium > div {
+          float: none;
+          display: flex;
         }
 
-        .row__large-8--smaller {
-            width: 63%;
-        }
-    }
+@media (min-width: 75rem) {
 
-/* Begin Equal rules */
-
-@media (min-width: 800px) {
-
-.flexbox  .row--equal-height-at-medium{
-            display: flex
-    }
-    }
-
-.flexbox  .row--equal-height-at-medium > div {
-            float: none;
-            display: flex;
-        }
-
-@media (min-width: 1010px) {
-
-.flexbox .row--equal-height-at-large{
-            display: flex
-    }
+.flexbox .row--equal-height-at-large {
+          display: flex
+    
+      }
     }
 
 .flexbox .row--equal-height-at-large > div {
-            float: none;
-            display: flex;
+          float: none;
+          display: flex;
         }
 
 /* DO NOT EDIT modules/_sprite directly as it is generatd automatically by GULP.
 Instead edit gulp/templates/sprite */
 
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-5120c040.svg');    
+            background-image: url('../../assets/images/sprites/sprite-bab55454.svg');    
         }
 
 .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-5120c040.png');                
+            background-image: url('../../assets/images/sprites/sprite-bab55454.png');                
         }
 
 .icon--YY-logo-white {
@@ -973,67 +1010,79 @@ Instead edit gulp/templates/sprite */
 .icon--comment {
         width: 66px;
         height: 66px;
-        background-position: 100% 0;
+        background-position: 0 72.89156626506023%;
     }
 
 .icon--facebook {
         width: 23.23px;
         height: 44.01px;
-        background-position: 45.41077453842363% 31.978603407174834%;
+        background-position: 46.91715212886577% 29.25687536571094%;
     }
 
 .icon--fire {
         width: 58px;
         height: 66px;
-        background-position: 0 70%;
+        background-position: 28.054298642533936% 33.13253012048193%;
+    }
+
+.icon--github {
+        width: 52px;
+        height: 52px;
+        background-position: 99.11894273127753% 53.36666666666667%;
     }
 
 .icon--globe {
         width: 66px;
         height: 66px;
-        background-position: 26.244343891402714% 70%;
+        background-position: 74.64788732394366% 0;
     }
 
 .icon--instagram {
         width: 44.01px;
         height: 44.01px;
-        background-position: 0 99.42438513867084%;
+        background-position: 0 99.47337624341719%;
+    }
+
+.icon--linkedin {
+        width: 52px;
+        height: 52px;
+        background-position: 99.11894273127753% 24.477777777777778%;
     }
 
 .icon--mail {
         width: 66px;
         height: 50px;
-        background-position: 0 33.13253012048193%;
+        background-position: 74.64788732394366% 36.26373626373626%;
     }
 
 .icon--rain {
         width: 66px;
         height: 66px;
-        background-position: 100% 44%;
+        background-position: 30.985915492957748% 72.89156626506023%;
     }
 
 .icon--star {
         width: 66px;
         height: 66px;
-        background-position: 56.10859728506787% 70%;
+        background-position: 61.971830985915496% 72.89156626506023%;
     }
 
 .icon--twitter {
         width: 53.78px;
         height: 44.06px;
-        background-position: 28.29945973758683% 31.98790275677562%;
+        background-position: 99.90231773377143% 0;
     }
 
 .icon--wifi {
         width: 62px;
         height: 66px;
-        background-position: 70.66666666666667% 0;
+        background-position: 0 33.13253012048193%;
     }
 
 .icon--youtube {
         width: 36.75px;
         height: 44px;
-        background-position: 17.586413586413585% 99.4186046511628%;
+        background-position: 18.1671826625387% 99.46808510638297%;
     }
 
 .site-footer {
@@ -1049,7 +1098,7 @@ Instead edit gulp/templates/sprite */
         font-weight: 200;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .site-footer__text {
             display: inline;
@@ -1069,10 +1118,10 @@ Instead edit gulp/templates/sprite */
 }
 
 .site-header--is-expanded {
-        background-color: rgba(255,109,36, .55);
+        background-color: rgba(35,37,38, .55);
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .site-header {
         position: fixed;
@@ -1082,11 +1131,11 @@ Instead edit gulp/templates/sprite */
 }     
         
         .site-header--dark {
-            background-color: rgba(78,65,59, .85);
+            background-color: rgba(35,37,38, .85);
         }
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .site-header__btn-container {
             float: right
@@ -1104,11 +1153,12 @@ Instead edit gulp/templates/sprite */
         transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         -webkit-transform-origin: 50% 0;
                 transform-origin: 50% 0;
-        background-color: #857671;
-        padding: 25px 36px;
+        background: linear-gradient(to bottom, #232526, #414345);
+        border: 1px solid #FF6D24;        
+        padding: 22px 36px;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .site-header__logo {
             left: auto;
@@ -1177,7 +1227,7 @@ Instead edit gulp/templates/sprite */
             transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .site-header__menu-icon {
             display: none
@@ -1211,7 +1261,7 @@ Instead edit gulp/templates/sprite */
         text-align: center;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .site-header__menu-content {
             opacity: 1;
@@ -1233,14 +1283,14 @@ Instead edit gulp/templates/sprite */
     padding-top: 10px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .primary-nav {
         padding-top: 0
 }
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .primary-nav--pull-right {
             float: right
@@ -1266,7 +1316,7 @@ Instead edit gulp/templates/sprite */
         padding-right: 7px;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .primary-nav li {
             padding-right: 20px;            
@@ -1279,7 +1329,7 @@ Instead edit gulp/templates/sprite */
         padding-right: 0;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .primary-nav li:last-child {
             padding-right: 20px
@@ -1296,7 +1346,7 @@ Instead edit gulp/templates/sprite */
         background-color: rgba(255,109,36, .5);
     }
 
-@media (min-width: 800px) {
+@media (min-width: 56.25rem) {
 
 .primary-nav a {
             font-size: 1rem;
@@ -1323,16 +1373,15 @@ Instead edit gulp/templates/sprite */
     }
 
 .projects-item {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         border: 1px solid #ddd;
         position: relative;
         overflow: hidden;
-        cursor: pointer;
     }
 
 .projects-item img {
-            height: 100%;
+            height: auto;
             width: 100%;
             transition: all .3s ease-out;
         }
@@ -1350,12 +1399,12 @@ Instead edit gulp/templates/sprite */
 .projects-item:before {
             position: absolute;
             content: '';
-            background-color: #34495e;
+            background-color: rgba(78,65,59, .85);
             transition: all .5s ease-in;
-            top: -40;
-            right: -110%;
-            width: 170%;
-            height: 30%;
+            top: -60%;
+            right: -210%;
+            width: 450%;
+            height: 50%;
             z-index: 3;
             -webkit-transform: rotate(50deg);
                     transform: rotate(50deg);
@@ -1372,7 +1421,7 @@ Instead edit gulp/templates/sprite */
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(78,65,59, .85);
         color: #fff;
         text-align: center;
         -webkit-transform: scale(0);
@@ -1455,16 +1504,16 @@ Instead edit gulp/templates/sprite */
         background-color: #FF6D24;
         display: inline-block;
         margin: 0 5px 5px 5px;
-        width: 33%;
-        height: 72px;
+        width: 50px;
+        height: 50px;
         position: relative;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 26.25rem) {
 
 .social-icons__icon {
-            width: 72px;
-            height: 72px;
+            width: 55px;
+            height: 55px;
             margin: 0 5px
     }
     }
@@ -1476,6 +1525,119 @@ Instead edit gulp/templates/sprite */
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
+        }
+
+.skill-section {
+    
+    line-height: 2rem;
+}
+
+.skill-section__paragraph{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -1rem;
+        width: 100%;   
+        font-size: 1rem;
+        font-weight: 300;
+            
+    }
+
+@media (min-width: 56.25rem) {
+
+.skill-section__paragraph{
+            font-size: 1rem;
+            width: 80%
+            
+    }
+    }
+
+/* &--no-margin-top {
+            margin-top: 0;                    
+        } */
+
+.skill-section__paragraph p.pr {
+            line-height: 1.3rem;
+        }
+
+.skill-section__paragraph p.pr:first-child {
+            line-height: normal;
+        }
+
+.skill-section__skills {
+        width: 100%;
+        background-color: #ddd;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .8rem;
+    }
+
+@media (min-width: 56.25rem) {
+
+.skill-section__skills {
+            width: 80%;    
+            font-weight: 500;   
+            font-size: 1rem
+    }
+    }
+
+.skill-section--items {
+        background-color: #FF6D24;
+        margin: 5px 0;
+        padding: 0 10px;
+        color: white;    
+        text-align: left; 
+        line-height: 2rem;
+        font-weight: 300;
+    }
+
+@media (min-width: 56.25rem) {
+
+.skill-section--items {
+            line-height: 2.5rem
+    }
+    }
+
+.skill-section--items-one {
+            width: 80%;
+        }
+
+.skill-section--items-two {
+            width: 80%;
+        }
+
+.skill-section--items-three {
+            width: 35%;
+        }
+
+.skill-section--items-four {
+            width: 20%;
+        }
+
+.skill-section--items-five {
+            width: 25%;
+        }
+
+.skill-section--items-six {
+            width: 65%;
+        }
+
+.skill-section--items-seven {
+            width: 30%;
+        }
+
+.skill-section--items-eight {
+            width: 20%;
+        }
+
+.skill-section--items-nine {
+            width: 45%;
+        }
+
+.skill-section--items-ten {
+            width: 35%;
         }
 
 .text-animation__title {
@@ -1620,7 +1782,7 @@ Instead edit gulp/templates/sprite */
 .btn-animation:active {
         -webkit-transform: translateY(-1px);
                 transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);        
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);    
     }
 
 .btn-animation::after {
@@ -1628,7 +1790,6 @@ Instead edit gulp/templates/sprite */
         display: inline-block;
         height: 100%;
         width: 100%;
-        /* border-radius: 100px; */
         position: absolute;
         top: 0;
         left: 0;

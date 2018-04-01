@@ -23,6 +23,8 @@
 
     &--blue {
         background-color: $mainBlue;
+
+        background: linear-gradient(to left, #fd6d33, #f16529);
         color: #fff;
     }
 

@@ -1,0 +1,110 @@
+.skill-section {
+    
+    line-height: 2rem;      
+    
+    &__paragraph{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -1rem;
+        width: 100%;   
+        font-size: 1rem;
+        font-weight: 300;
+        
+
+        @mixin atMedium {
+            font-size: 1rem;
+            width: 80%; 
+        }
+
+        /* &--no-margin-top {
+            margin-top: 0;                    
+        } */
+
+        & p.pr {
+            line-height: 1.3rem;
+        }
+        
+        & p.pr:first-child {
+            line-height: normal;
+        }
+            
+    }
+
+    &__skills {
+        width: 100%;
+        background-color: #ddd;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .8rem;
+
+        @mixin atMedium {
+            width: 80%;    
+            font-weight: 500;   
+            font-size: 1rem;
+            
+        }
+    }
+
+    &--items {
+        background-color: $mainOrange;
+        margin: 5px 0;
+        padding: 0 10px;
+        color: white;    
+        text-align: left; 
+        line-height: 2rem;
+        font-weight: 300;          
+        
+        @mixin atMedium {
+            line-height: 2.5rem; 
+        }
+
+        &-one {
+            width: 80%;
+        }
+
+        &-two {
+            width: 80%;
+        }
+
+        &-three {
+            width: 35%;
+        }
+
+        &-four {
+            width: 20%;
+        }
+
+        &-five {
+            width: 25%;
+        }
+
+        &-six {
+            width: 65%;
+        }
+
+        &-seven {
+            width: 30%;
+        }
+
+        &-eight {
+            width: 20%;
+        }
+
+        &-nine {
+            width: 45%;
+        }
+
+        &-ten {
+            width: 35%;
+        }
+    }
+}
+      
+    
+    
+    
+    
+      
