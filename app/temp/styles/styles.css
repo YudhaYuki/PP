@@ -838,132 +838,157 @@ a {
     }
 
 .row--t-padding {
-          padding-top: 80px;
-      }
+      padding-top: 80px;
+    }
 
 .row--gutters {
-          margin-right: -65px;
-      }
+      margin-right: -65px;
+    }
 
 .row--gutters-large {
-          margin-right: -100px;
-      }
+      margin-right: -100px;
+    }
 
-/* &--gutters-small {
-          margin-right: -45px;
-      } */
+.row--gutters-small {
+      margin-right: -45px;
+    }
 
-.row--gutters > div {
-          padding-right: 65px;
-      }
+/* &--gutters-about > div :not(:last-child){
+      padding-right: 65px;
+    } */
 
 .row--gutters-large > div {
-          padding-right: 100px;
-      }
+      padding-right: 100px;
+    }
 
-/* &--gutters-small > div {
-          margin-right: 45px;
-      } */
+/* &--gutters > div {
+      padding-right: 65px;
+    } */
+
+.row--gutters-small > div {
+      padding-right: 45px;
+    }
 
 .row__b-margin-until-medium {
-          margin-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+@media (min-width: 26.25rem) {
+      .row__medium-3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
       }
+    }
+
+@media (min-width: 37.5rem) {
+      .row__medium-3 {
+        float: left;
+        width: 50%;
+      }
+    }
 
 @media (min-width: 56.25rem) {
+
+.row {
   
-          .row__b-margin-until-medium {
-              margin-bottom: 0;
-          }
+      /* &__medium-8 {
+        float: left;
+        width: 66.66%;
+      }
   
-          .row__medium-3 {
-              float: left;
-              width: 25%;
-          }
+      &__medium-8--smaller {
+        width: 63%;
+      } */
   
-          .row__medium-4 {
-              float: left;
-              width: 33.33%;
-          }
+  }
   
-          .row__medium-4--larger {
-              width: 37%;
-          }
+      .row__b-margin-until-medium {
+        margin-bottom: 0;
+      }
   
-          .row__medium-6 {
-              float: left;
-              width: 50%;
-          }
-      
-          .row__medium-8 {
-              float: left;
-              width: 66.66%;
-          }
+      .row__medium-3 {
+        float: left;
+        width: 33.33%;
+      }
+
+      .row__medium-4 {
+        float: left;
+        width: 33.33%;
+      }
   
-          .row__medium-8--smaller {
-              width: 63%;
-          }
+      .row__medium-4--larger {
+        width: 37%;
+      }
+  
+      .row__medium-6 {
+        float: left;
+        width: 50%;
+      }
     }
 
 @media (min-width: 75rem) {
-          
+      
           .row__b-margin-until-large {
-              margin-bottom: 0;
+            margin-bottom: 0;
           }
-  
-          .row__large-3 {
-              float: left;
-              width: 25%;
+
+          .row__medium-3 {
+            float: left;
+            width: 25%;
           }
-  
+      
           .row__large-4 {
-              float: left;
-              width: 33.33%;
+            float: left;
+            width: 33.33%;
           }
-  
+      
           .row__large-4--larger {
-              width: 37%;
+            width: 37%;
           }
-  
+      
           .row__large-6 {
-              float: left;
-              width: 50%;
+            float: left;
+            width: 50%;
           }
       
           .row__large-8 {
-              float: left;
-              width: 66.66%;
+            float: left;
+            width: 66.66%;
           }
-  
+      
           .row__large-8--smaller {
-              width: 63%;
+            width: 63%;
           }
     }
 
-/* Begin Equal rules */
+/* Begin Equal Height Rules */
 
 @media (min-width: 56.25rem) {
 
-.flexbox  .row--equal-height-at-medium{
-              display: flex
-      }
+.flexbox .row--equal-height-at-medium {
+        display: flex
+  
+    }
     }
 
-.flexbox  .row--equal-height-at-medium > div {
-              float: none;
-              display: flex;
-          }
+.flexbox .row--equal-height-at-medium > div {
+        float: none;
+        display: flex;
+      }
 
 @media (min-width: 75rem) {
 
-.flexbox .row--equal-height-at-large{
-              display: flex
-      }
+.flexbox .row--equal-height-at-large {
+        display: flex
+  
+    }
     }
 
 .flexbox .row--equal-height-at-large > div {
-              float: none;
-              display: flex;
-          }
+        float: none;
+        display: flex;
+      }
 
 /* DO NOT EDIT modules/_sprite directly as it is generatd automatically by GULP.
 Instead edit gulp/templates/sprite */
