@@ -361,6 +361,7 @@ a {
 }
 
 .btn {
+    background-color: #FF6D24;
     color: #fff;
     text-decoration: none;
     padding:.75rem 1.2rem;
@@ -377,6 +378,8 @@ a {
         padding: 1.1rem 1.9rem;
 
     }
+
+/* border-radius: 100px; */
 
 @media (min-width: 26.25rem) {
 
@@ -1782,7 +1785,7 @@ Instead edit gulp/templates/sprite */
 .btn-animation:active {
         -webkit-transform: translateY(-1px);
                 transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);    
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);        
     }
 
 .btn-animation::after {
@@ -1790,6 +1793,7 @@ Instead edit gulp/templates/sprite */
         display: inline-block;
         height: 100%;
         width: 100%;
+        /* border-radius: 100px; */
         position: absolute;
         top: 0;
         left: 0;
