@@ -39,6 +39,7 @@
     }
 
 
+
     @mixin atSmall {
       &__medium-3 {
         margin-left: auto;
@@ -47,6 +48,8 @@
       }
     }
 
+
+
     @mixin atMediumSmall {
       &__medium-3 {
         float: left;
@@ -54,6 +57,8 @@
       }
     }
   
+
+
     @mixin atMedium {
   
       &__b-margin-until-medium {
@@ -89,6 +94,8 @@
       } */
   
     }
+
+
 
     @mixin atLarge {
       
@@ -126,6 +133,8 @@
       
         }
     
+
+        
     /* Begin Equal Height Rules */
     .flexbox &--equal-height-at-medium {
       @mixin atMedium {
