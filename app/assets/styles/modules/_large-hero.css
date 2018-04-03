@@ -1,10 +1,17 @@
 .large-hero {
-    background-size: cover;
+    /* height: 100vh;
+    width: 100%; */
+    background: url('/assets/images/hero--YuYu.jpg');
+    background-size: cover;    
+    position: relative;
+
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
     height: 100vh;
     width: auto;
-    background: url('/assets/images/hero--YuYu.jpg');
-    background-size: cover;
     overflow: hidden;
+    object-fit: cover;
     
     &--overlay {
         width: 100%;

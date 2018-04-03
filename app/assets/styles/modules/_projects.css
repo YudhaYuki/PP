@@ -58,10 +58,18 @@
         margin-top: 20%;
         margin-bottom: 20px;
         color: $mainOrange;
+        font-size: 2rem;
     }
 
     &-description {
         padding: 0 20px;
+        font-size: 2rem;
+
+        @mixin atSmall {
+            padding: 0 10px;     
+            font-size: 1.5rem;
+        }
+
     }
 
 }

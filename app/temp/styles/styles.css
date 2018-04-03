@@ -464,12 +464,20 @@ a {
     }
 
 .large-hero {
-    background-size: cover;
+    /* height: 100vh;
+    width: 100%; */
+    background: url('/assets/images/hero--YuYu.jpg');
+    background-size: cover;    
+    position: relative;
+
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
     height: 100vh;
     width: auto;
-    background: url('/assets/images/hero--YuYu.jpg');
-    background-size: cover;
     overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
     
 }
 
@@ -893,7 +901,7 @@ a {
   
       .row__medium-3 {
         float: left;
-        width: 33.33%;
+        width: 50%;
       }
     }
 
@@ -1439,10 +1447,22 @@ Instead edit gulp/templates/sprite */
         margin-top: 20%;
         margin-bottom: 20px;
         color: #FF6D24;
+        font-size: 2rem;
     }
 
 .projects-description {
         padding: 0 20px;
+        font-size: 2rem;
+
+    }
+
+@media (min-width: 26.25rem) {
+
+.projects-description {
+            padding: 0 10px;     
+            font-size: 1.5rem
+
+    }
     }
 
 .modal {
@@ -1647,8 +1667,8 @@ Instead edit gulp/templates/sprite */
         }
 
 .text-animation__title {
-    -webkit-animation: moveInLeft 1s ease-out;
-            animation: moveInLeft 1s ease-out;
+    -webkit-animation: moveInLeft 2s ease-out;
+            animation: moveInLeft 2s ease-out;
     /* 
     animation-delay: 1.5s; 
     animation-iteration-count: 2;
@@ -1656,8 +1676,8 @@ Instead edit gulp/templates/sprite */
 }
 
 .text-animation__subtitle  {
-    -webkit-animation: moveInRight 1s ease-out;
-            animation: moveInRight 1s ease-out;
+    -webkit-animation: moveInRight 2s ease-out;
+            animation: moveInRight 2s ease-out;
 }
 
 .large-hero__description-animated {
@@ -1767,8 +1787,8 @@ Instead edit gulp/templates/sprite */
 }
 
 .btn-animation--large-btn {
-        -webkit-animation: moveInBottom .5s ease-out .75s;
-                animation: moveInBottom .5s ease-out .75s;
+        -webkit-animation: moveInBottom .75s ease-out .9s;
+                animation: moveInBottom .75s ease-out .9s;
         -webkit-animation-fill-mode: backwards;
                 animation-fill-mode: backwards;
     }

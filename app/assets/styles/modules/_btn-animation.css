@@ -1,7 +1,7 @@
 .btn-animation {
     
     &--large-btn {
-        animation: moveInBottom .5s ease-out .75s;
+        animation: moveInBottom .75s ease-out .9s;
         animation-fill-mode: backwards;
     }
 
