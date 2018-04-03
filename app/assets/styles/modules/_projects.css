@@ -3,9 +3,10 @@
     &-item {
         max-width: 100%;
         height: auto;
-        border: 1px solid #ddd;
+        /* border: 1px solid $mainWhite; */
         position: relative;
         overflow: hidden;
+        margin-bottom: 2rem;
 
         & img {
             height: auto;
