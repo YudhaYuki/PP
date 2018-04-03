@@ -1091,8 +1091,8 @@ Instead edit gulp/templates/sprite */
     }
 
 .site-footer {
-    background-color: #FF6D24;
-    color: white;
+    background-color: #4E413B;
+    color: #FF6D24;
     padding: .5rem 0;
     text-align: center;
 }
