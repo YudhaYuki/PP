@@ -27,13 +27,22 @@
     }
 
     &--behind-card-1 {
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         width: 8rem;
         border-radius: 5px;
+
+        @mixin atMediumSmall {
+            margin-bottom: 1rem;
+            width: 5rem;
+        }
     }
 
     &--behind-card-2 {
         width: 8rem;
         border-radius: 5px;
+
+        @mixin atMediumSmall {
+            width: 5rem;
+        }
     }
 }

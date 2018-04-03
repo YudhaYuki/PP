@@ -52,22 +52,31 @@
         text-align: center;
         transform: scale(0);
         transition: all .5s ease;
+        
     }
 
     &-title {
-        margin-top: 20%;
+        margin-top: 20px;
         margin-bottom: 20px;
         color: $mainOrange;
-        font-size: 2rem;
+        font-size: 1rem;
+
+
+        @mixin atMediumSmall {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
     }
 
     &-description {
-        padding: 0 20px;
-        font-size: 2rem;
+        padding: 0 .75rem;
+        font-size: 1rem;
+
 
         @mixin atSmall {
-            padding: 0 10px;     
-            font-size: 1.5rem;
+            padding: 0 .75rem;            
+            font-size: .75rem;
         }
 
     }

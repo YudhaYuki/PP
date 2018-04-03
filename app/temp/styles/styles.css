@@ -394,14 +394,29 @@ a {
         }
 
 .btn--behind-card-1 {
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         width: 8rem;
         border-radius: 5px;
+    }
+
+@media (min-width: 37.5rem) {
+
+.btn--behind-card-1 {
+            margin-bottom: 1rem;
+            width: 5rem
+    }
     }
 
 .btn--behind-card-2 {
         width: 8rem;
         border-radius: 5px;
+    }
+
+@media (min-width: 37.5rem) {
+
+.btn--behind-card-2 {
+            width: 5rem
+    }
     }
 
 .wrapper {
@@ -1441,26 +1456,36 @@ Instead edit gulp/templates/sprite */
         -webkit-transform: scale(0);
                 transform: scale(0);
         transition: all .5s ease;
+        
     }
 
 .projects-title {
-        margin-top: 20%;
+        margin-top: 20px;
         margin-bottom: 20px;
         color: #FF6D24;
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+@media (min-width: 37.5rem) {
+
+.projects-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1rem
+    }
     }
 
 .projects-description {
-        padding: 0 20px;
-        font-size: 2rem;
+        padding: 0 .75rem;
+        font-size: 1rem;
 
     }
 
 @media (min-width: 26.25rem) {
 
 .projects-description {
-            padding: 0 10px;     
-            font-size: 1.5rem
+            padding: 0 .75rem;            
+            font-size: .75rem
 
     }
     }
@@ -1570,11 +1595,19 @@ Instead edit gulp/templates/sprite */
             
     }
 
+@media (min-width: 37.5rem) {
+
+.skill-section__paragraph{
+            width: 75%
+            
+    }
+    }
+
 @media (min-width: 56.25rem) {
 
 .skill-section__paragraph{
             font-size: 1rem;
-            width: 80%
+            width: 90%
             
     }
     }
@@ -1600,10 +1633,17 @@ Instead edit gulp/templates/sprite */
         font-size: .8rem;
     }
 
+@media (min-width: 37.5rem) {
+
+.skill-section__skills {
+            width: 75%
+    }
+    }
+
 @media (min-width: 56.25rem) {
 
 .skill-section__skills {
-            width: 80%;    
+            width: 90%;    
             font-weight: 500;   
             font-size: 1rem
     }
