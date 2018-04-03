@@ -18,13 +18,13 @@
       margin-right: -45px;
     }
   
-    /* &--gutters > div {
+    &--gutters > div {
       padding-right: 65px;
-    } */
+    }
 
-    /* &--gutters-about > div :not(:last-child){
+    &--gutters-about > div :not(:last-child){
       padding-right: 65px;
-    } */
+    }
   
     &--gutters-large > div {
       padding-right: 100px;
@@ -38,26 +38,33 @@
       margin-bottom: 1rem;
     }
 
-
-
-    @mixin atSmall {
-      &__medium-3 {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-      }
+    &__medium-3 {
+      margin-left: auto;
+      margin-right: auto;
+      float: left;      
+      width: 100%;
     }
 
+    
+    @mixin atSmall {
+      
+        &__medium-3 {
+          float: left;
+          width: 50%;
+        }
+  
+      }
 
 
     @mixin atMediumSmall {
+
       &__medium-3 {
         float: left;
-        width: 50%;
+        width: 33.33%;
       }
+
     }
   
-
 
     @mixin atMedium {
   
@@ -67,7 +74,7 @@
   
       &__medium-3 {
         float: left;
-        width: 33.33%;
+        width: 50%;
       }
 
       &__medium-4 {
@@ -94,8 +101,6 @@
       } */
   
     }
-
-
 
     @mixin atLarge {
       
@@ -134,7 +139,7 @@
         }
     
 
-        
+
     /* Begin Equal Height Rules */
     .flexbox &--equal-height-at-medium {
       @mixin atMedium {

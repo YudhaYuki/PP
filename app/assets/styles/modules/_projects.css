@@ -7,6 +7,14 @@
         position: relative;
         overflow: hidden;
 
+        @mixin atSmall {
+            max-width: 50%;
+        }
+
+        @mixin atMediumSmall {
+            max-width: 50%;
+        }
+
         & img {
             height: auto;
             width: 100%;

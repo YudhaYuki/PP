@@ -856,17 +856,17 @@ a {
       margin-right: -45px;
     }
 
-/* &--gutters-about > div :not(:last-child){
+.row--gutters > div {
       padding-right: 65px;
-    } */
+    }
+
+.row--gutters-about > div :not(:last-child){
+      padding-right: 65px;
+    }
 
 .row--gutters-large > div {
       padding-right: 100px;
     }
-
-/* &--gutters > div {
-      padding-right: 65px;
-    } */
 
 .row--gutters-small > div {
       padding-right: 45px;
@@ -876,18 +876,26 @@ a {
       margin-bottom: 1rem;
     }
 
+.row__medium-3 {
+      margin-left: auto;
+      margin-right: auto;
+      float: left;      
+      width: 100%;
+    }
+
 @media (min-width: 26.25rem) {
-      .row__medium-3 {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-      }
+      
+        .row__medium-3 {
+          float: left;
+          width: 50%;
+        }
     }
 
 @media (min-width: 37.5rem) {
+
       .row__medium-3 {
         float: left;
-        width: 50%;
+        width: 33.33%;
       }
     }
 
@@ -912,7 +920,7 @@ a {
   
       .row__medium-3 {
         float: left;
-        width: 33.33%;
+        width: 50%;
       }
 
       .row__medium-4 {
@@ -1381,6 +1389,20 @@ Instead edit gulp/templates/sprite */
         border: 1px solid #ddd;
         position: relative;
         overflow: hidden;
+    }
+
+@media (min-width: 26.25rem) {
+
+.projects-item {
+            max-width: 50%
+    }
+    }
+
+@media (min-width: 37.5rem) {
+
+.projects-item {
+            max-width: 50%
+    }
     }
 
 .projects-item img {
