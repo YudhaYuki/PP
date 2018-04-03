@@ -466,9 +466,10 @@ a {
 .large-hero {
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: auto;
     background: url('/assets/images/hero--YuYu.jpg');
     background-size: cover;
+    overflow: hidden;
     
 }
 
@@ -860,10 +861,6 @@ a {
       padding-right: 65px;
     }
 
-.row--gutters-about > div :not(:last-child){
-      padding-right: 65px;
-    }
-
 .row--gutters-large > div {
       padding-right: 100px;
     }
@@ -876,44 +873,8 @@ a {
       margin-bottom: 1rem;
     }
 
-.row__medium-3 {
-      margin-left: auto;
-      margin-right: auto;
-      float: left;      
-      width: 100%;
-    }
-
 @media (min-width: 26.25rem) {
       
-        .row__medium-3 {
-          float: left;
-          width: 50%;
-        }
-    }
-
-@media (min-width: 37.5rem) {
-
-      .row__medium-3 {
-        float: left;
-        width: 33.33%;
-      }
-    }
-
-@media (min-width: 56.25rem) {
-
-.row {
-  
-      /* &__medium-8 {
-        float: left;
-        width: 66.66%;
-      }
-  
-      &__medium-8--smaller {
-        width: 63%;
-      } */
-  
-  }
-  
       .row__b-margin-until-medium {
         margin-bottom: 0;
       }
@@ -922,7 +883,31 @@ a {
         float: left;
         width: 50%;
       }
+    }
 
+@media (min-width: 37.5rem) {
+      
+      .row__b-margin-until-medium {
+        margin-bottom: 0;
+      }
+  
+      .row__medium-3 {
+        float: left;
+        width: 33.33%;
+      }
+    }
+
+@media (min-width: 56.25rem) {
+  
+      .row__b-margin-until-medium {
+        margin-bottom: 0;
+      }
+  
+      .row__medium-3 {
+        float: left;
+        width: 33.33%;
+      }
+  
       .row__medium-4 {
         float: left;
         width: 33.33%;
@@ -936,41 +921,50 @@ a {
         float: left;
         width: 50%;
       }
+  
+      .row__medium-8 {
+        float: left;
+        width: 66.66%;
+      }
+  
+      .row__medium-8--smaller {
+        width: 63%;
+      }
     }
 
 @media (min-width: 75rem) {
-      
-          .row__b-margin-until-large {
-            margin-bottom: 0;
-          }
+  
+      .row__b-margin-until-large {
+        margin-bottom: 0;
+      }
 
-          .row__medium-3 {
-            float: left;
-            width: 25%;
-          }
-      
-          .row__large-4 {
-            float: left;
-            width: 33.33%;
-          }
-      
-          .row__large-4--larger {
-            width: 37%;
-          }
-      
-          .row__large-6 {
-            float: left;
-            width: 50%;
-          }
-      
-          .row__large-8 {
-            float: left;
-            width: 66.66%;
-          }
-      
-          .row__large-8--smaller {
-            width: 63%;
-          }
+      .row__medium-3 {
+        float: left;
+        width: 25%;
+      }
+  
+      .row__large-4 {
+        float: left;
+        width: 33.33%;
+      }
+  
+      .row__large-4--larger {
+        width: 37%;
+      }
+  
+      .row__large-6 {
+        float: left;
+        width: 50%;
+      }
+  
+      .row__large-8 {
+        float: left;
+        width: 66.66%;
+      }
+  
+      .row__large-8--smaller {
+        width: 63%;
+      }
     }
 
 /* Begin Equal Height Rules */
@@ -1389,20 +1383,6 @@ Instead edit gulp/templates/sprite */
         border: 1px solid #ddd;
         position: relative;
         overflow: hidden;
-    }
-
-@media (min-width: 26.25rem) {
-
-.projects-item {
-            max-width: 50%
-    }
-    }
-
-@media (min-width: 37.5rem) {
-
-.projects-item {
-            max-width: 50%
-    }
     }
 
 .projects-item img {
