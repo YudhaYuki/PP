@@ -1,16 +1,17 @@
-.projects {
+.my-projects {
+    display: flex;
+    flex-direction: row;
 
-    &-item {
-        max-width: 100%;
+    .projects-item {
+        width: 15rem;
         height: auto;
-        /* border: 1px solid $mainWhite; */
         position: relative;
         overflow: hidden;
         margin-bottom: 2rem;
 
         & img {
             height: auto;
-            width: 100%;
+            width: 25rem;
             transition: all .3s ease-out;
         }
 
@@ -41,7 +42,7 @@
         }
     }
 
-    &-inner {
+    .projects-inner {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -52,32 +53,18 @@
         text-align: center;
         transform: scale(0);
         transition: all .5s ease;
-        
     }
 
-    &-title {
+    .projects-title {
         margin-top: 20px;
         margin-bottom: 20px;
         color: $mainOrange;
-        font-size: 1rem;
-
-
-        @mixin atMediumSmall {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
+        font-size: 2rem;
     }
 
-    &-description {
+    .projects-description {
         padding: 0 .75rem;
-        font-size: 1rem;
-
-
-        @mixin atSmall {
-            padding: 0 .75rem;            
-            font-size: .75rem;
-        }
+        font-size: 1.3rem;
 
     }
 

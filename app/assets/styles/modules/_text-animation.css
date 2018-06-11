@@ -1,5 +1,5 @@
 .text-animation__title {
-    animation: moveInLeft 2s ease-out;
+    animation: moveInLeft 1s ease-out;
     /* 
     animation-delay: 1.5s; 
     animation-iteration-count: 2;
@@ -7,7 +7,7 @@
 }
 
 .text-animation__subtitle  {
-    animation: moveInRight 2s ease-out;
+    animation: moveInRight 1s ease-out;
 }
 
 .large-hero__description-animated {

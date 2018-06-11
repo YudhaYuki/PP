@@ -1,112 +1,109 @@
 .skill-section {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
     
-    line-height: 2rem;      
+    @mixin atMedium{
+        flex-direction: row;
+        justify-content: center;
+    }
     
-    &__paragraph{
+    &__paragraph {
+        flex: 1;
         text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -1rem;
-        width: 100%;   
+        margin: 0 3rem;
         font-size: 1rem;
         font-weight: 300;
-        
-        
-        @mixin atMediumSmall {
-            width: 75%; 
-        }
-
-        @mixin atMedium {
-            font-size: 1rem;
-            width: 90%; 
-        }
-
-        /* &--no-margin-top {
-            margin-top: 0;                    
-        } */
+        padding-top: 0;        
 
         & p.pr {
             line-height: 1.3rem;
         }
         
-        & p.pr:first-child {
+        /* & p.pr:first-child {
             line-height: normal;
-        }
+        } */
             
     }
 
-    &__skills {
-        width: 100%;
+    /* &__skills {
+        flex: 1;        
         background-color: #ddd;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         font-size: .8rem;
 
-        @mixin atMediumSmall {
-            width: 75%; 
+        @mixin atSmall {
+            width: 80%;   
+            font-size: 1rem;            
         }
+
         @mixin atMedium {
             width: 90%;    
             font-weight: 500;   
-            font-size: 1rem;
             
         }
-    }
+    } */
 
-    &--items {
-        background-color: $mainOrange;
-        margin: 5px 0;
-        padding: 0 10px;
-        color: white;    
-        text-align: left; 
-        line-height: 2rem;
-        font-weight: 300;          
-        
-        @mixin atMedium {
-            line-height: 2.5rem; 
+    .skill-section__toolkits {
+        flex: 1;      
+        margin: 0 3rem;
+        font-size: 1rem;      
+
+        .skill-section__skills {
+            background-color: $mainOrange;
+            margin: 5px 0;
+            padding: 0 ;
+            color: white;    
+            text-align: left; 
+            line-height: 2rem;
+            font-weight: 300;          
+            
+            @mixin atMedium {
+                line-height: 2.5rem; 
+            }
+
+            &-one {
+                width: 80%;
+            }
+
+            &-two {
+                width: 80%;
+            }
+
+            &-three {
+                width: 50%;
+            }
+
+            &-four {
+                width: 35%;
+            }
+
+            &-five {
+                width: 40%;
+            }
+
+            &-six {
+                width: 67.5%;
+            }
+
+            &-seven {
+                width: 40%;
+            }
+
+            &-eight {
+                width: 25%;
+            }
+
+            &-nine {
+                width: 45%;
+            }
+
+            &-ten {
+                width: 35%;
+            }
         }
 
-        &-one {
-            width: 80%;
-        }
-
-        &-two {
-            width: 80%;
-        }
-
-        &-three {
-            width: 35%;
-        }
-
-        &-four {
-            width: 20%;
-        }
-
-        &-five {
-            width: 25%;
-        }
-
-        &-six {
-            width: 65%;
-        }
-
-        &-seven {
-            width: 30%;
-        }
-
-        &-eight {
-            width: 20%;
-        }
-
-        &-nine {
-            width: 45%;
-        }
-
-        &-ten {
-            width: 35%;
-        }
     }
 }
       

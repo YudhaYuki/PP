@@ -346,8 +346,9 @@ template {
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #333;
+    font-size: 62.5%;
 }
 
 img {
@@ -368,6 +369,7 @@ a {
     display: inline-block;
     transition: all .2s;
     position: relative;
+    font-size: 1rem;
 }
 
 .btn--orange {
@@ -381,10 +383,10 @@ a {
 
 /* border-radius: 100px; */
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .btn--large {
-            font-size: 1.25rem
+            font-size: 1.1rem
 
     }
     }
@@ -399,11 +401,11 @@ a {
         border-radius: 5px;
     }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 50rem) {
 
 .btn--behind-card-1 {
             margin-bottom: 1rem;
-            width: 5rem
+            width: 8rem
     }
     }
 
@@ -412,7 +414,7 @@ a {
         border-radius: 5px;
     }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 50rem) {
 
 .btn--behind-card-2 {
             width: 5rem
@@ -441,7 +443,7 @@ a {
         padding-right: 0;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .wrapper--no-padding-until-medium {
             padding-left: 18px;
@@ -454,7 +456,7 @@ a {
         padding-right: 0;
     }
 
-@media (min-width: 75rem) {
+@media (min-width: 63.125rem) {
 
 .wrapper--no-padding-until-large {
             padding-left: 18px;
@@ -471,7 +473,7 @@ a {
         margin-bottom: 1rem;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .wrapper--b-margin {
             margin-bottom: 3.875rem
@@ -481,25 +483,25 @@ a {
 .large-hero {
     /* height: 100vh;
     width: 100%; */
-    background: url('/assets/images/hero--YuYu.jpg');
-    background-size: cover;    
+    height: 95vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0), rgba(59, 59, 59, .8)), url('/assets/images/hero--YuYu.jpg');
+    background-size: cover;
+    background-position: top;    
     position: relative;
 
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     
 }
+
+/* overflow: hidden;
+    object-fit: cover; */
 
 .large-hero--overlay {
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, .35);
+        /* background: rgba(0, 0, 0, .35); */
         position: relative;
     }
 
@@ -514,7 +516,7 @@ a {
         text-align: center;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .large-hero__text-content {
             padding-top: 60px
@@ -522,27 +524,27 @@ a {
     }
 
 .large-hero__title {
-        font-weight: 300;
+        font-weight: 600;
         color: #FF6D24;
         font-size: 2.2rem;
         margin: 0;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .large-hero__title {
             font-size: 2.8rem
     }
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .large-hero__title {
             font-size: 3.8rem
     }
     }
 
-@media (min-width: 75rem) {
+@media (min-width: 63.125rem) {
 
 .large-hero__title {
             font-size: 4.8rem
@@ -556,7 +558,7 @@ a {
         margin-top: 1;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .large-hero__subtitle{
             font-size: 2.1rem;
@@ -564,7 +566,7 @@ a {
     }
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .large-hero__subtitle{
             font-size: 2.7rem
@@ -581,18 +583,16 @@ a {
         margin-right: auto;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .large-hero__description {
             font-size: 1.875rem
     }
     }
 
-.page-section {
-    padding: 1.2rem 0;
-}
+/* padding: 1.2rem 0; */
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .page-section {
         padding: 4.5rem 0
@@ -603,7 +603,7 @@ a {
         padding-bottom: 0;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .page-section--no-b-padding-until-medium {
             padding-bottom: 4.5rem
@@ -614,7 +614,7 @@ a {
         padding-bottom: 0;
     }
 
-@media (min-width: 75rem) {
+@media (min-width: 63.125rem) {
 
 .page-section--no-b-padding-until-large {
             padding-bottom: 4.5rem
@@ -633,7 +633,7 @@ a {
 
     }
 
-@media (min-width: 75rem) {
+@media (min-width: 63.125rem) {
 
             .page-section--testimonials.lazyloaded {
                 background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
@@ -642,16 +642,24 @@ a {
     }
 
 .headline {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-weight: 300;
     color: #FF6D24;
     
 }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .headline {
-        font-size: 2.875rem
+        font-size: 2.75rem
+    
+}
+    }
+
+@media (min-width: 50rem) {
+
+.headline {
+        font-size: 3.25rem
     
 }
     }
@@ -668,7 +676,7 @@ a {
         font-size: 1.2rem;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .headline--small {
             font-size: 1.875rem
@@ -690,7 +698,7 @@ a {
         margin-bottom: 1em;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .headline--b-margin-small {
             margin-top: .5em;            
@@ -712,7 +720,7 @@ a {
         margin:0 0 1.8rem 0;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .generic-content-container p {
             font-size: 1.125rem
@@ -729,7 +737,7 @@ a {
     text-align: center;
 }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .section-title {
         font-size: 2.875rem
@@ -752,7 +760,7 @@ a {
         margin-bottom: .6rem;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .section-title__icon {
             position: relative;
@@ -769,7 +777,7 @@ a {
     padding-bottom: 2.5rem;
 }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .feature-item {
         padding-left: 94px
@@ -782,7 +790,7 @@ a {
         margin: 0 auto;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .feature-item__icon {
             position: absolute;
@@ -800,7 +808,7 @@ a {
 
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .feature-item__title {
             text-align: left;
@@ -817,7 +825,7 @@ a {
     margin-bottom: 98px;
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 63.125rem) {
 
 .testimonial {
         padding: 0 1.8125rem 1px 1.8125rem;        
@@ -856,167 +864,142 @@ a {
         margin: .25rem 0 1rem 0;
     }
 
-/* To trick float so that browser know there is content in this div */
+/*
 
-.row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-.row--t-padding {
+.row {
+  
+    @mixin clearfix;
+  
+    &--t-padding {
       padding-top: 80px;
     }
-
-.row--gutters {
+  
+    &--gutters {
       margin-right: -65px;
     }
-
-.row--gutters-large {
+  
+    &--gutters-large {
       margin-right: -100px;
     }
-
-.row--gutters-small {
+  
+    &--gutters-small {
       margin-right: -45px;
     }
-
-.row--gutters > div {
+  
+    &--gutters > div {
       padding-right: 65px;
     }
-
-.row--gutters-large > div {
+  
+    &--gutters-large > div {
       padding-right: 100px;
     }
-
-.row--gutters-small > div {
+  
+    &--gutters-small > div {
       padding-right: 45px;
     }
-
-.row__b-margin-until-medium {
+  
+    &__b-margin-until-medium {
       margin-bottom: 1rem;
     }
 
-@media (min-width: 26.25rem) {
-      
-      .row__b-margin-until-medium {
-        margin-bottom: 0;
-      }
-  
-      .row__medium-3 {
-        float: left;
-        width: 50%;
-      }
-    }
+    @mixin atSmall {
 
-@media (min-width: 37.5rem) {
-      
-      .row__b-margin-until-medium {
-        margin-bottom: 0;
-      }
-  
-      .row__medium-3 {
-        float: left;
-        width: 50%;
-      }
+          &__small-4 {
+            float: left;
+            width: 50%;
+          }
     }
-
-@media (min-width: 56.25rem) {
   
-      .row__b-margin-until-medium {
+    @mixin atMedium {
+  
+      &__b-margin-until-medium {
         margin-bottom: 0;
       }
   
-      .row__medium-3 {
+      &__medium-4 {
         float: left;
         width: 33.33%;
       }
   
-      .row__medium-4 {
-        float: left;
-        width: 33.33%;
-      }
-  
-      .row__medium-4--larger {
+      &__medium-4--larger {
         width: 37%;
       }
   
-      .row__medium-6 {
+      &__medium-6 {
         float: left;
         width: 50%;
       }
   
-      .row__medium-8 {
+      &__medium-8 {
         float: left;
         width: 66.66%;
       }
   
-      .row__medium-8--smaller {
+      &__medium-8--smaller {
         width: 63%;
       }
-    }
-
-@media (min-width: 75rem) {
-  
-      .row__b-margin-until-large {
-        margin-bottom: 0;
-      }
-
-      .row__medium-3 {
-        float: left;
-        width: 25%;
-      }
-  
-      .row__large-4 {
-        float: left;
-        width: 33.33%;
-      }
-  
-      .row__large-4--larger {
-        width: 37%;
-      }
-  
-      .row__large-6 {
-        float: left;
-        width: 50%;
-      }
-  
-      .row__large-8 {
-        float: left;
-        width: 66.66%;
-      }
-  
-      .row__large-8--smaller {
-        width: 63%;
-      }
-    }
-
-/* Begin Equal Height Rules */
-
-@media (min-width: 56.25rem) {
-
-.flexbox .row--equal-height-at-medium {
-        display: flex
   
     }
-    }
 
-.flexbox .row--equal-height-at-medium > div {
+    @mixin atLarge {
+      
+          &__b-margin-until-large {
+            margin-bottom: 0;
+          }
+      
+          &__large-4 {
+            float: left;
+            width: 25%;
+          }
+      
+          &__large-4--larger {
+            width: 37%;
+          }
+      
+          &__large-6 {
+            float: left;
+            width: 50%;
+          }
+      
+          &__large-8 {
+            float: left;
+            width: 66.66%;
+          }
+      
+          &__large-8--smaller {
+            width: 63%;
+          }
+      
+        }
+    
+    /* Begin Equal Height Rules
+    .flexbox &--equal-height-at-medium {
+      @mixin atMedium {
+        display: flex;
+      }
+  
+      & > div {
         float: none;
         display: flex;
       }
-
-@media (min-width: 75rem) {
-
-.flexbox .row--equal-height-at-large {
-        display: flex
   
     }
-    }
 
-.flexbox .row--equal-height-at-large > div {
+    .flexbox &--equal-height-at-large {
+      @mixin atLarge {
+        display: flex;
+      }
+  
+      & > div {
         float: none;
         display: flex;
       }
+  
+    }
+  
+  }
+
+  */
 
 /* DO NOT EDIT modules/_sprite directly as it is generatd automatically by GULP.
 Instead edit gulp/templates/sprite */
@@ -1124,9 +1107,17 @@ Instead edit gulp/templates/sprite */
         display: block;
         margin-bottom: 1rem;
         font-weight: 200;
+        font-size: .8rem;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 33.125rem) {
+
+.site-footer__text {
+            font-size: 1rem
+    }
+    }
+
+@media (min-width: 50rem) {
 
 .site-footer__text {
             display: inline;
@@ -1149,7 +1140,7 @@ Instead edit gulp/templates/sprite */
         background-color: rgba(35,37,38, .55);
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .site-header {
         position: fixed;
@@ -1163,7 +1154,7 @@ Instead edit gulp/templates/sprite */
         }
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .site-header__btn-container {
             float: right
@@ -1186,7 +1177,7 @@ Instead edit gulp/templates/sprite */
         padding: 22px 36px;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .site-header__logo {
             left: auto;
@@ -1255,7 +1246,7 @@ Instead edit gulp/templates/sprite */
             transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .site-header__menu-icon {
             display: none
@@ -1289,7 +1280,7 @@ Instead edit gulp/templates/sprite */
         text-align: center;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .site-header__menu-content {
             opacity: 1;
@@ -1311,14 +1302,14 @@ Instead edit gulp/templates/sprite */
     padding-top: 10px;
 }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .primary-nav {
         padding-top: 0
 }
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .primary-nav--pull-right {
             float: right
@@ -1344,7 +1335,7 @@ Instead edit gulp/templates/sprite */
         padding-right: 7px;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .primary-nav li {
             padding-right: 20px;            
@@ -1357,7 +1348,7 @@ Instead edit gulp/templates/sprite */
         padding-right: 0;
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .primary-nav li:last-child {
             padding-right: 20px
@@ -1374,7 +1365,7 @@ Instead edit gulp/templates/sprite */
         background-color: rgba(255,109,36, .5);
     }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 50rem) {
 
 .primary-nav a {
             font-size: 1rem;
@@ -1400,32 +1391,37 @@ Instead edit gulp/templates/sprite */
                 transform: scale(1);
     }
 
-.projects-item {
-        max-width: 100%;
+.my-projects {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.my-projects .projects-item {
+        width: 15rem;
         height: auto;
-        /* border: 1px solid $mainWhite; */
         position: relative;
         overflow: hidden;
         margin-bottom: 2rem;
     }
 
-.projects-item img {
+.my-projects .projects-item img {
             height: auto;
-            width: 100%;
+            width: 25rem;
             transition: all .3s ease-out;
         }
 
-.projects-item:hover img {
+.my-projects .projects-item:hover img {
             -webkit-transform: scale(1.2, 1.2) rotate(10deg);
                     transform: scale(1.2, 1.2) rotate(10deg);
         }
 
-.projects-item:hover .projects-inner {
+.my-projects .projects-item:hover .projects-inner {
             -webkit-transform: scale(1);
                     transform: scale(1);
         }
 
-.projects-item:before {
+.my-projects .projects-item:before {
             position: absolute;
             content: '';
             background-color: rgba(78,65,59, .85);
@@ -1439,12 +1435,12 @@ Instead edit gulp/templates/sprite */
                     transform: rotate(50deg);
         }
 
-.projects-item:hover:before {
+.my-projects .projects-item:hover:before {
             top: 120%;
             right: 120%
         }
 
-.projects-inner {
+.my-projects .projects-inner {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -1456,38 +1452,19 @@ Instead edit gulp/templates/sprite */
         -webkit-transform: scale(0);
                 transform: scale(0);
         transition: all .5s ease;
-        
     }
 
-.projects-title {
+.my-projects .projects-title {
         margin-top: 20px;
         margin-bottom: 20px;
         color: #FF6D24;
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
-@media (min-width: 37.5rem) {
-
-.projects-title {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 1rem
-    }
-    }
-
-.projects-description {
+.my-projects .projects-description {
         padding: 0 .75rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
 
-    }
-
-@media (min-width: 26.25rem) {
-
-.projects-description {
-            padding: 0 .75rem;            
-            font-size: .75rem
-
-    }
     }
 
 .modal {
@@ -1560,7 +1537,7 @@ Instead edit gulp/templates/sprite */
         position: relative;
     }
 
-@media (min-width: 26.25rem) {
+@media (min-width: 33.125rem) {
 
 .social-icons__icon {
             width: 55px;
@@ -1579,136 +1556,123 @@ Instead edit gulp/templates/sprite */
         }
 
 .skill-section {
-    
+    display: flex;
+    flex-direction: column;
     line-height: 2rem;
 }
 
-.skill-section__paragraph{
+@media (min-width: 50rem) {
+
+.skill-section {
+        flex-direction: row;
+        justify-content: center
+}
+    }
+
+.skill-section__paragraph {
+        flex: 1;
         text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -1rem;
-        width: 100%;   
+        margin: 0 3rem;
         font-size: 1rem;
         font-weight: 300;
-            
-    }
-
-@media (min-width: 37.5rem) {
-
-.skill-section__paragraph{
-            width: 75%
-            
-    }
-    }
-
-@media (min-width: 56.25rem) {
-
-.skill-section__paragraph{
-            font-size: 1rem;
-            width: 90%
-            
-    }
-    }
-
-/* &--no-margin-top {
-            margin-top: 0;                    
+        padding-top: 0;
+        
+        /* & p.pr:first-child {
+            line-height: normal;
         } */
+            
+    }
 
 .skill-section__paragraph p.pr {
             line-height: 1.3rem;
         }
 
-.skill-section__paragraph p.pr:first-child {
-            line-height: normal;
-        }
-
-.skill-section__skills {
-        width: 100%;
+/* &__skills {
+        flex: 1;        
         background-color: #ddd;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         font-size: .8rem;
-    }
 
-@media (min-width: 37.5rem) {
+        @mixin atSmall {
+            width: 80%;   
+            font-size: 1rem;            
+        }
 
-.skill-section__skills {
-            width: 75%
-    }
-    }
-
-@media (min-width: 56.25rem) {
-
-.skill-section__skills {
+        @mixin atMedium {
             width: 90%;    
             font-weight: 500;   
-            font-size: 1rem
-    }
-    }
+            
+        }
+    } */
 
-.skill-section--items {
-        background-color: #FF6D24;
-        margin: 5px 0;
-        padding: 0 10px;
-        color: white;    
-        text-align: left; 
-        line-height: 2rem;
-        font-weight: 300;
+.skill-section .skill-section__toolkits {
+        flex: 1;      
+        margin: 0 3rem;
+        font-size: 1rem;
+
     }
 
-@media (min-width: 56.25rem) {
+.skill-section .skill-section__toolkits .skill-section__skills {
+            background-color: #FF6D24;
+            margin: 5px 0;
+            padding: 0 ;
+            color: white;    
+            text-align: left; 
+            line-height: 2rem;
+            font-weight: 300;
+        }
 
-.skill-section--items {
-            line-height: 2.5rem
+@media (min-width: 50rem) {
+
+.skill-section .skill-section__toolkits .skill-section__skills {
+                line-height: 2.5rem
+        }
     }
-    }
 
-.skill-section--items-one {
-            width: 80%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-one {
+                width: 80%;
+            }
 
-.skill-section--items-two {
-            width: 80%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-two {
+                width: 80%;
+            }
 
-.skill-section--items-three {
-            width: 35%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-three {
+                width: 50%;
+            }
 
-.skill-section--items-four {
-            width: 20%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-four {
+                width: 35%;
+            }
 
-.skill-section--items-five {
-            width: 25%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-five {
+                width: 40%;
+            }
 
-.skill-section--items-six {
-            width: 65%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-six {
+                width: 67.5%;
+            }
 
-.skill-section--items-seven {
-            width: 30%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-seven {
+                width: 40%;
+            }
 
-.skill-section--items-eight {
-            width: 20%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-eight {
+                width: 25%;
+            }
 
-.skill-section--items-nine {
-            width: 45%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-nine {
+                width: 45%;
+            }
 
-.skill-section--items-ten {
-            width: 35%;
-        }
+.skill-section .skill-section__toolkits .skill-section__skills-ten {
+                width: 35%;
+            }
 
 .text-animation__title {
-    -webkit-animation: moveInLeft 2s ease-out;
-            animation: moveInLeft 2s ease-out;
+    -webkit-animation: moveInLeft 1s ease-out;
+            animation: moveInLeft 1s ease-out;
     /* 
     animation-delay: 1.5s; 
     animation-iteration-count: 2;
@@ -1716,8 +1680,8 @@ Instead edit gulp/templates/sprite */
 }
 
 .text-animation__subtitle  {
-    -webkit-animation: moveInRight 2s ease-out;
-            animation: moveInRight 2s ease-out;
+    -webkit-animation: moveInRight 1s ease-out;
+            animation: moveInRight 1s ease-out;
 }
 
 .large-hero__description-animated {

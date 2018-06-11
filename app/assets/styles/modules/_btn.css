@@ -7,6 +7,7 @@
     display: inline-block;
     transition: all .2s;
     position: relative;
+    font-size: 1rem;
 
     &--orange {
         background-color: $mainOrange;
@@ -17,7 +18,7 @@
         /* border-radius: 100px; */
 
         @mixin atSmall {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
         }
 
         &::after {
@@ -31,9 +32,9 @@
         width: 8rem;
         border-radius: 5px;
 
-        @mixin atMediumSmall {
+        @mixin atMedium {
             margin-bottom: 1rem;
-            width: 5rem;
+            width: 8rem;
         }
     }
 
@@ -41,7 +42,7 @@
         width: 8rem;
         border-radius: 5px;
 
-        @mixin atMediumSmall {
+        @mixin atMedium {
             width: 5rem;
         }
     }
