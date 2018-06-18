@@ -404,7 +404,6 @@ a {
 @media (min-width: 50rem) {
 
 .btn--behind-card-1 {
-            margin-bottom: 1rem;
             width: 8rem
     }
     }
@@ -417,7 +416,7 @@ a {
 @media (min-width: 50rem) {
 
 .btn--behind-card-2 {
-            width: 5rem
+            width: 8rem
     }
     }
 
@@ -484,7 +483,7 @@ a {
     /* height: 100vh;
     width: 100%; */
     height: 95vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .0), rgba(59, 59, 59, .8)), url('/assets/images/hero--YuYu.jpg');
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .0), rgba(59, 59, 59, .8)), url('/assets/images/hero--YuYu.jpg');
     background-size: cover;
     background-position: top;    
     position: relative;
@@ -863,143 +862,6 @@ a {
         font-size: .9375rem;
         margin: .25rem 0 1rem 0;
     }
-
-/*
-
-.row {
-  
-    @mixin clearfix;
-  
-    &--t-padding {
-      padding-top: 80px;
-    }
-  
-    &--gutters {
-      margin-right: -65px;
-    }
-  
-    &--gutters-large {
-      margin-right: -100px;
-    }
-  
-    &--gutters-small {
-      margin-right: -45px;
-    }
-  
-    &--gutters > div {
-      padding-right: 65px;
-    }
-  
-    &--gutters-large > div {
-      padding-right: 100px;
-    }
-  
-    &--gutters-small > div {
-      padding-right: 45px;
-    }
-  
-    &__b-margin-until-medium {
-      margin-bottom: 1rem;
-    }
-
-    @mixin atSmall {
-
-          &__small-4 {
-            float: left;
-            width: 50%;
-          }
-    }
-  
-    @mixin atMedium {
-  
-      &__b-margin-until-medium {
-        margin-bottom: 0;
-      }
-  
-      &__medium-4 {
-        float: left;
-        width: 33.33%;
-      }
-  
-      &__medium-4--larger {
-        width: 37%;
-      }
-  
-      &__medium-6 {
-        float: left;
-        width: 50%;
-      }
-  
-      &__medium-8 {
-        float: left;
-        width: 66.66%;
-      }
-  
-      &__medium-8--smaller {
-        width: 63%;
-      }
-  
-    }
-
-    @mixin atLarge {
-      
-          &__b-margin-until-large {
-            margin-bottom: 0;
-          }
-      
-          &__large-4 {
-            float: left;
-            width: 25%;
-          }
-      
-          &__large-4--larger {
-            width: 37%;
-          }
-      
-          &__large-6 {
-            float: left;
-            width: 50%;
-          }
-      
-          &__large-8 {
-            float: left;
-            width: 66.66%;
-          }
-      
-          &__large-8--smaller {
-            width: 63%;
-          }
-      
-        }
-    
-    /* Begin Equal Height Rules
-    .flexbox &--equal-height-at-medium {
-      @mixin atMedium {
-        display: flex;
-      }
-  
-      & > div {
-        float: none;
-        display: flex;
-      }
-  
-    }
-
-    .flexbox &--equal-height-at-large {
-      @mixin atLarge {
-        display: flex;
-      }
-  
-      & > div {
-        float: none;
-        display: flex;
-      }
-  
-    }
-  
-  }
-
-  */
 
 /* DO NOT EDIT modules/_sprite directly as it is generatd automatically by GULP.
 Instead edit gulp/templates/sprite */
@@ -1393,35 +1255,50 @@ Instead edit gulp/templates/sprite */
 
 .my-projects {
     display: flex;
-    flex-direction: row;
-
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
 }
 
-.my-projects .projects-item {
-        width: 15rem;
+@media (min-width: 33.125rem) {
+
+.my-projects {
+        padding: 0 5rem
+}
+    }
+
+.my-projects__item {
+        width: 250px;
         height: auto;
         position: relative;
         overflow: hidden;
-        margin-bottom: 2rem;
+        margin: .5rem;
+}
+
+@media (min-width: 50rem) {
+
+.my-projects__item {
+            width: 240px
+}
     }
 
-.my-projects .projects-item img {
+.my-projects__item img {
             height: auto;
-            width: 25rem;
+            width: 250px;
             transition: all .3s ease-out;
         }
 
-.my-projects .projects-item:hover img {
+.my-projects__item:hover img {
             -webkit-transform: scale(1.2, 1.2) rotate(10deg);
                     transform: scale(1.2, 1.2) rotate(10deg);
         }
 
-.my-projects .projects-item:hover .projects-inner {
+.my-projects__item:hover .projects-inner {
             -webkit-transform: scale(1);
                     transform: scale(1);
         }
 
-.my-projects .projects-item:before {
+.my-projects__item:before {
             position: absolute;
             content: '';
             background-color: rgba(78,65,59, .85);
@@ -1435,12 +1312,12 @@ Instead edit gulp/templates/sprite */
                     transform: rotate(50deg);
         }
 
-.my-projects .projects-item:hover:before {
+.my-projects__item:hover:before {
             top: 120%;
             right: 120%
         }
 
-.my-projects .projects-inner {
+.my-projects__item .projects-inner {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -1454,14 +1331,14 @@ Instead edit gulp/templates/sprite */
         transition: all .5s ease;
     }
 
-.my-projects .projects-title {
+.my-projects__item .projects-title {
         margin-top: 20px;
         margin-bottom: 20px;
         color: #FF6D24;
         font-size: 2rem;
     }
 
-.my-projects .projects-description {
+.my-projects__item .projects-description {
         padding: 0 .75rem;
         font-size: 1.3rem;
 
@@ -1558,12 +1435,23 @@ Instead edit gulp/templates/sprite */
 .skill-section {
     display: flex;
     flex-direction: column;
-    line-height: 2rem;
+    
+    padding: 0 0 3rem 0;
+    line-height: 1rem;
 }
+
+@media (min-width: 33.125rem) {
+
+.skill-section {
+        padding: 1rem 0 3rem 1rem;  
+        line-height: 2rem
+}
+    }
 
 @media (min-width: 50rem) {
 
 .skill-section {
+        padding: 0;        
         flex-direction: row;
         justify-content: center
 }
@@ -1571,9 +1459,10 @@ Instead edit gulp/templates/sprite */
 
 .skill-section__paragraph {
         flex: 1;
-        text-align: center;
+        text-align: justify;
+        
         display: block;
-        margin: 0 3rem;
+        /* margin: 0 3rem; */
         font-size: 1rem;
         font-weight: 300;
         padding-top: 0;
@@ -1582,6 +1471,16 @@ Instead edit gulp/templates/sprite */
             line-height: normal;
         } */
             
+    }
+
+@media (min-width: 63.125rem) {
+
+.skill-section__paragraph {
+            text-align: center;                        
+            line-height: 2.5rem; 
+            margin: 1rem 3rem 0 3rem
+            
+    }
     }
 
 .skill-section__paragraph p.pr {
@@ -1607,21 +1506,46 @@ Instead edit gulp/templates/sprite */
     } */
 
 .skill-section .skill-section__toolkits {
-        flex: 1;      
-        margin: 0 3rem;
-        font-size: 1rem;
+        flex: 1;
+
+        margin: 0;
+        font-size: 1rem;  
+        margin-top: 2rem;
 
     }
 
+@media (min-width: 50rem) {
+
+.skill-section .skill-section__toolkits {
+            line-height: 2.5rem; 
+            margin: 1.1rem 0 0 2rem
+
+    }
+    }
+
+@media (min-width: 63.125rem) {
+
+.skill-section .skill-section__toolkits {
+            line-height: 2.5rem; 
+            margin: 1.8rem 3rem 0 3rem
+
+    }
+    }
+
 .skill-section .skill-section__toolkits .skill-section__skills {
-            background-color: #FF6D24;
+            background-color: #e4e4e4;
             margin: 5px 0;
-            padding: 0 ;
+            padding: 0 0 ;
             color: white;    
             text-align: left; 
             line-height: 2rem;
             font-weight: 300;
         }
+
+.skill-section .skill-section__toolkits .skill-section__skills span {
+                padding: 0 1rem ;
+                
+            }
 
 @media (min-width: 50rem) {
 
@@ -1632,42 +1556,52 @@ Instead edit gulp/templates/sprite */
 
 .skill-section .skill-section__toolkits .skill-section__skills-one {
                 width: 80%;
+                background-color: #FF6D24;                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-two {
                 width: 80%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-three {
                 width: 50%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-four {
                 width: 35%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-five {
                 width: 40%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-six {
                 width: 67.5%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-seven {
                 width: 40%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-eight {
                 width: 25%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-nine {
                 width: 45%;
+                background-color: #FF6D24;                                
             }
 
 .skill-section .skill-section__toolkits .skill-section__skills-ten {
                 width: 35%;
+                background-color: #FF6D24;                                
             }
 
 .text-animation__title {

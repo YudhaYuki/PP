@@ -7,6 +7,6 @@ import Modal from './modules/Modal';
 
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".skill-section"), "85%");
-new RevealOnScroll($(".projects-item"), "60%");
+new RevealOnScroll($(".my-projects__item"), "60%");
 var stickyHeader = new StickyHeader();
 var modal = new Modal();

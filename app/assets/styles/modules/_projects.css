@@ -1,17 +1,29 @@
 .my-projects {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
 
-    .projects-item {
-        width: 15rem;
+    @mixin atSmall {
+        padding: 0 5rem;
+    }
+}
+    
+    .my-projects__item {
+        width: 250px;
         height: auto;
         position: relative;
         overflow: hidden;
-        margin-bottom: 2rem;
+        margin: .5rem;
+
+        @mixin atMedium {
+            width: 240px;
+        }
+        
 
         & img {
             height: auto;
-            width: 25rem;
+            width: 250px;
             transition: all .3s ease-out;
         }
 
@@ -40,7 +52,6 @@
             top: 120%;
             right: 120%
         }
-    }
 
     .projects-inner {
         position: absolute;
@@ -67,5 +78,4 @@
         font-size: 1.3rem;
 
     }
-
 }

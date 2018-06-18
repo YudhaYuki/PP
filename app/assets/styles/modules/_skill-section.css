@@ -1,21 +1,36 @@
 .skill-section {
     display: flex;
     flex-direction: column;
-    line-height: 2rem;
+    
+    padding: 0 0 3rem 0;
+    line-height: 1rem;
+
+    @mixin atSmall {
+        padding: 1rem 0 3rem 1rem;  
+        line-height: 2rem;        
+    }     
     
     @mixin atMedium{
+        padding: 0;        
         flex-direction: row;
         justify-content: center;
     }
     
     &__paragraph {
         flex: 1;
-        text-align: center;
+        text-align: justify;
+        
         display: block;
-        margin: 0 3rem;
+        /* margin: 0 3rem; */
         font-size: 1rem;
         font-weight: 300;
-        padding-top: 0;        
+        padding-top: 0;   
+
+        @mixin atLarge {
+            text-align: center;                        
+            line-height: 2.5rem; 
+            margin: 1rem 3rem 0 3rem;
+        }
 
         & p.pr {
             line-height: 1.3rem;
@@ -46,61 +61,88 @@
     } */
 
     .skill-section__toolkits {
-        flex: 1;      
-        margin: 0 3rem;
-        font-size: 1rem;      
+        flex: 1;
+
+        margin: 0;
+        font-size: 1rem;  
+        margin-top: 2rem;    
+
+        @mixin atMedium {
+            line-height: 2.5rem; 
+            margin: 1.1rem 0 0 2rem;
+        }
+
+        @mixin atLarge {
+            line-height: 2.5rem; 
+            margin: 1.8rem 3rem 0 3rem;
+        }
 
         .skill-section__skills {
-            background-color: $mainOrange;
+            background-color: $lightGrey;
             margin: 5px 0;
-            padding: 0 ;
+            padding: 0 0 ;
             color: white;    
             text-align: left; 
             line-height: 2rem;
-            font-weight: 300;          
+            font-weight: 300;   
+            
+            span {
+                padding: 0 1rem ;
+                
+            }
             
             @mixin atMedium {
-                line-height: 2.5rem; 
+                line-height: 2.5rem;   
             }
 
             &-one {
                 width: 80%;
+                background-color: $mainOrange;                
             }
 
             &-two {
                 width: 80%;
+                background-color: $mainOrange;                                
             }
 
             &-three {
                 width: 50%;
+                background-color: $mainOrange;                                
             }
 
             &-four {
                 width: 35%;
+                background-color: $mainOrange;                                
             }
 
             &-five {
                 width: 40%;
+                background-color: $mainOrange;                                
             }
 
             &-six {
                 width: 67.5%;
+                background-color: $mainOrange;                                
             }
 
             &-seven {
                 width: 40%;
+                background-color: $mainOrange;                                
             }
 
             &-eight {
                 width: 25%;
+                background-color: $mainOrange;                                
             }
 
             &-nine {
                 width: 45%;
+                background-color: $mainOrange;                                
             }
 
             &-ten {
                 width: 35%;
+                background-color: $mainOrange;                                
             }
         }
 
